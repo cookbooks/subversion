@@ -28,7 +28,7 @@ extra_packages = case node[:platform]
     else
       %w{subversion-tools libsvn-perl}
     end
-  when "centos","redhat","fedora"
+  when "centos","redhat","fedora","amazon"
     %w{subversion-devel subversion-perl}
   else
     %w{subversion-tools libsvn-perl}
